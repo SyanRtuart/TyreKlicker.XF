@@ -8,8 +8,9 @@
                     Title="Order"
                     Icon="hamburger.png">
     <ContentPage.Content>
-        <StackLayout Margin="10">
-            <Label Text="ORDER PAGE ORDER PAGE ORDER PAGE ORDER PAGE ORDER PAGE ORDER PAGE ORDER PAGE " />
+        <StackLayout BackgroundColor="Red">
+            <ListView RefreshCommand="{Binding RefreshCommand}" ItemsSource="{Binding StringItems}" IsPullToRefreshEnabled="True">
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </views:MvxContentPage>

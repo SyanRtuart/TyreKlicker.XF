@@ -12,6 +12,8 @@ namespace TyreKlicker.XF.Core.ViewModels
         public IMvxAsyncCommand LoginCommand { get; }
         public IMvxAsyncCommand NavigateToRegistrationPageCommand { get; }
 
+        //public IMvxAsyncCommand LoginCommand { get; }
+
         public LoginViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService, Services.IAppSettings settings) : base(logProvider, navigationService)
         {
             _navigationService = navigationService;
